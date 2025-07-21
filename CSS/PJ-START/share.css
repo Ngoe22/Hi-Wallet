@@ -130,7 +130,7 @@ body {
 .sh-phone-scr {
     display: grid;
     grid-template-rows: 9vh 1fr 11vh;
-    width: 550px;
+    max-width: 550px;
     height: 100vh;
     margin: 0 auto;
     background-color: var(--background-main-color);
