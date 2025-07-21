@@ -1,0 +1,60 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+/* .sh-phone-scr{
+    grid-template-rows: 9vh 1fr 11vh;
+} */
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+.sh-page-header .right {
+    visibility: hidden;
+}
+
+/* --- BODY --- */
+
+/* head padding < 20px > */
+
+.sh-page-body {
+    padding: 0 20px;
+}
+
+/* --- FOOTER --- */
+
+/* .sh-page-footer {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-nav-bar {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-submit-btn {
+    display: none;
+} */
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+.board {
+    margin-top: 40px;
+}
+
+.board .input-block {
+    background-color: white;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.board .input-block .input-plc {
+    color: var(--text-gray);
+
+    font-size: 1.3rem;
+    opacity: 80%;
+    font-weight: 400;
+    border-radius: 5px;
+}

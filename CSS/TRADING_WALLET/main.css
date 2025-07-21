@@ -1,0 +1,110 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+.sh-phone-scr {
+    grid-template-rows: 9vh 1fr;
+}
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+/* .sh-page-header .left ,
+.sh-page-header .right {
+    visibility: hidden;
+} */
+
+/* --- BODY --- */
+
+.sh-page-body {
+    padding: 0 20px;
+}
+
+/* --- FOOTER --- */
+
+.sh-page-footer {
+    display: none;
+}
+
+/* .sh-page-footer .sh-nav-bar {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-submit-btn {
+    display: none;
+} */
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+.wallet-info {
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wallet-info .qr-block {
+    height: 220px;
+}
+
+.wallet-info .qr-block .icon {
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 12rem;
+    color: white;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.wallet-info .address-block {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.wallet-info .address-block .address-line {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+/* <!-- QR code action  --> */
+
+.qr-action-line {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qr-action-line .btn {
+    width: 49%;
+    padding: 12px 0;
+    border: 1.5px solid var(--text-gray);
+    border-radius: 10px;
+    color: var(--text-gray);
+}
+
+/* <!-- noticeboard --> */
+
+.noticeboard {
+    margin-top: 20px;
+    background-color: var(--background-blur-gray);
+}
+
+.noticeboard .board-head {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.noticeboard .board-body {
+    margin-top: 15px;
+}
+
+.noticeboard .board-body .notice-line {
+    margin-bottom: 10px;
+    /* color: var(--text-gray); */
+    font-size: 1.4rem;
+}

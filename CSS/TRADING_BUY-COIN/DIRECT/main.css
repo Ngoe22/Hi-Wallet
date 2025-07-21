@@ -1,0 +1,95 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+.sh-phone-scr {
+    grid-template-rows: 9vh auto 1fr;
+}
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+/* .sh-page-header .right {
+    visibility: hidden;
+} */
+
+/* --- BODY --- */
+
+.sh-page-body {
+    padding: 0 20px;
+}
+
+/* --- FOOTER --- */
+
+/* .sh-page-footer {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-nav-bar {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-submit-btn {
+    display: none;
+} */
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+.sh-warning-line {
+    margin-top: 20px;
+}
+
+.order-board {
+    margin-top: 20px;
+}
+
+.order-board .order-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-board .order-card .line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sh-separator {
+    margin: 0 0;
+}
+
+.order-board .order-card .line.amt {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.order-board .order-card .line.amt .label {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.order-board .order-card .line.ord-num {
+    font-size: 1.2rem;
+}
+
+.order-board .order-card .line.ord-time {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+}
+
+.order-board .order-card .cta-btn {
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding: 6px 15px 4px;
+    border-radius: 5px;
+}
+
+.order-board .order-card .support-method {
+    gap: 9px;
+}

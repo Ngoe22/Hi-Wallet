@@ -1,0 +1,114 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+/* .sh-phone-scr{
+    grid-template-rows: 9vh 1fr 11vh;
+} */
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+.sh-page-header .right {
+    visibility: hidden;
+}
+
+/* --- BODY --- */
+
+.sh-page-body {
+    padding: 0 20px;
+}
+
+/* --- FOOTER --- */
+
+/* .sh-page-footer {
+    display: none;
+} */
+
+.sh-page-footer .sh-nav-bar {
+    display: none;
+}
+
+/* .sh-page-footer .sh-submit-btn {
+    display: none;
+} */
+
+.sh-page-footer .sh-submit-btn {
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.sh-page-footer .sh-submit-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: 1s;
+}
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+.board {
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.board .item {
+    background-color: white;
+    padding: 15px 20px;
+    margin-bottom: 0.8px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.board .item .value {
+    margin-left: auto;
+    font-size: 1.3rem;
+    color: rgb(167, 166, 166);
+}
+
+.board .item.real-name .value {
+    color: #36c5f9;
+}
+
+.board .item:not(:last-child) .value::after {
+    content: ">";
+    display: inline-block;
+    color: rgb(193, 193, 193);
+    margin-left: 15px;
+}
+
+
+/* last  */
+.board .item.quick-login .label-block {
+    display: grid;
+    grid-template-areas:
+        "icon label"
+        "icon sub-label";
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.board .item.quick-login .icon {
+    grid-area: icon;
+    display: block;
+    width: 50px;
+    padding: 5px 5px;
+    border: 3px solid rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.board .item.quick-login .label {
+    grid-area: label;
+    font-size: 1.5rem;
+    vertical-align: bottom;
+}
+
+.board .item.quick-login .sub-label {
+    grid-area: sub-label;
+    font-size: 1.2rem;
+    color: rgb(163, 161, 161);
+}

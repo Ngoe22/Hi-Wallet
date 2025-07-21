@@ -1,0 +1,66 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+.sh-phone-scr {
+    grid-template-rows: 9vh 1fr;
+}
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+/* .sh-page-header .left ,
+.sh-page-header .right {
+    visibility: hidden;
+} */
+
+/* --- BODY --- */
+
+.sh-page-body {
+    padding: 0 20px;
+}
+
+/* --- FOOTER --- */
+
+.sh-page-footer {
+    display: none;
+}
+
+/* .sh-page-footer .sh-nav-bar {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-submit-btn {
+    display: none;
+} */
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+.coin-type {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.coin-type .coin-name {
+    font-size: 1.8rem;
+    border: 0;
+}
+
+.board .wallet-card {
+    display: block;
+    background-color: white;
+}
+
+.board .wallet-card .address {
+    color: black;
+}
+
+
+.board .wallet-card .note {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}

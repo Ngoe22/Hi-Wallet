@@ -1,0 +1,102 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+/* .sh-phone-scr{
+    grid-template-rows: 9vh 1fr 11vh;
+} */
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+/* .sh-page-header .right,
+.sh-page-header .left { 
+    visibility: hidden;
+} */
+
+/* --- BODY --- */
+
+.sh-page-body {
+    padding: 0 20px;
+}
+
+/* --- FOOTER --- */
+
+.sh-page-footer {
+    display: none;
+}
+
+.sh-page-footer .sh-nav-bar {
+    display: none;
+}
+
+/* .sh-page-footer .sh-submit-btn {
+    display: none;
+} */
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+.board {
+    margin-top: 40px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.board .card-block {
+    width: 100%;
+}
+
+.board .card-block .content {
+    padding: 10px 0;
+}
+
+.board .card-block:not(:last-child)::after {
+    content: "";
+    display: block;
+    background-color: var(--background-main-color);
+    height: 2px;
+    /* base on parent padding   */
+    width: calc(100% + 30px);
+    margin: 5px 0 5px -15px;
+    /*  */
+}
+
+.board .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    width: 40%;
+    line-height: 1.2;
+    color: black;
+}
+
+.board .card-info .note {
+    font-size: 1.1rem;
+    /* color: var(--text-gray); */
+}
+
+.board .card-num {
+    width: 25%;
+    margin-left: auto;
+    font-size: 1.4rem;
+    /* color: var(--text-gray); */
+}
+
+.board .default-status {
+    display: inline-block;
+    padding: 4px 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: var(--text-gray);
+    font-size: 1.1rem;
+    color: white;
+    visibility: hidden;
+}
+.board .card-block:first-child .default-status {
+    visibility: visible;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- ================================  FAVICON FILE ================================ -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="../../../ASSETS/FAVICON/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="../../../ASSETS/FAVICON/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="../../../ASSETS/FAVICON/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="../../../ASSETS/FAVICON/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../../../ASSETS/FAVICON/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="../../../ASSETS/FAVICON/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="../../../ASSETS/FAVICON/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="../../../ASSETS/FAVICON/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../../../ASSETS/FAVICON/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="../../../ASSETS/FAVICON/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../../../ASSETS/FAVICON/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../../../ASSETS/FAVICON/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../../../ASSETS/FAVICON/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../../../ASSETS/FAVICON/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- ================  CSS FILE ================ -->
+        <!-- reset -->
+        <link rel="stylesheet" href="../../../CSS/PJ-START/reset.css" />
+        <!-- share -->
+        <link rel="stylesheet" href="../../../CSS/PJ-START/share.css" />
+        <!-- own -->
+        <link
+            rel="stylesheet"
+            href="../../../CSS/TRADING_BUY-COIN/MY-PENDING/main.css"
+        />
+        <!-- ================================  FONTS ================================ -->
+        <!-- INTER -->
+
+        <!-- OUTER -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- ================================  ICON ================================ -->
+        <!-- font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- ================  #### ================ -->
+    </head>
+    <body>
+        <section class="sh-phone-scr">
+            <header class="sh-page-header">
+                <a href="../../../index.html" class="sh-header-btn left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <div class="title">我的挂单</div>
+                <a href="../method-board.html" class="sh-header-btn right">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </header>
+            <!-- sub header -->
+            <div class="sh-coin-and-trade-type">
+                <!-- coin type line -->
+                <div class="sh-coin-type-line">
+                    <a
+                        href="../../../HTML/TRADING_BUY-COIN/MY-PENDING/main.html"
+                        class="coin-type cnyt sh-status-cancel-text"
+                        >CNYT</a
+                    >
+                    <a
+                        href="../../../HTML/TRADING_BUY-COIN/MY-PENDING/main(usdt).html"
+                        class="coin-type usdt "
+                        >USDT(TRC20)</a
+                    >
+                </div>
+                <!-- transfer type -->
+                <div class="sh-transfer-type">
+                    <a
+                        href="../../../HTML/TRADING_BUY-COIN/MY-PENDING/main.html"
+                        class="cm-center-item-row btn left"
+                        style="background: var(--color-trans-orange)"
+                        >买进</a
+                    >
+
+                    <a
+                        href="../../../HTML/TRADING_SELL-COIN/MY-PENDING/main(usdt).html"
+                        class="cm-center-item-row btn right"
+                        >卖出</a
+                    >
+                </div>
+            </div>
+            <!-- BODY -->
+            <div class="sh-page-body">
+                <!-- time set -->
+                <button class="sh-time-filter-bar">
+                    <span class="filter-type">全部</span>
+                    <span class="filter-date-range"
+                        >2000.01.02 ~ 2000.02.01</span
+                    >
+                    <span class="filter-action">选择 </span>
+                </button>
+                <!-- order board -->
+                <div class="ord-board">
+                    <div class="ord-card">
+                        <div class="line th1">
+                            <div class="ord-number">
+                                订单号：
+                                <span class="sh-inline">O294710249710247</span>
+                            </div>
+                        </div>
+                        <div class="line th2">
+                            <div class="ord-fee">
+                                手续费：<span class="sh-inline"> 0.00%</span>
+                            </div>
+                        </div>
+                        <div class="line th3">
+                            <div class="ord-amt">
+                                购买量： <span class="sh-inline"> 520.00</span>
+                            </div>
+                        </div>
+                        <div class="sh-separator"></div>
+                        <div class="line action">
+                            <div class="time">
+                                <span class="sh-inline"> 2000.01.02</span>
+                                || <span class="sh-inline"> 10:32:11</span>
+                            </div>
+                            <div class="status">
+                                <span class="label">进行中</span>
+                                <i
+                                    class="fa-solid fa-circle-chevron-down"
+                                    style="margin-left: 5px"
+                                ></i>
+
+                                <div class="child-ord-board">
+                                    <a href="#！" class="child-ord-card">
+                                        <div class="line">
+                                            <div class="ord-number">
+                                                订单号：
+                                                <span class="sh-inline"
+                                                    >O294710249710247
+                                                </span>
+                                            </div>
+                                            <div class="amout">
+                                                <span class="sh-inline">
+                                                    520.00</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="line"
+                                            style="margin-top: 10px"
+                                        >
+                                            <div class="child-ord-time">
+                                                <span class="sh-inline">
+                                                    2000.01.02 || 10:32:11
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="child-ord-status sh-status-process-text"
+                                            >
+                                                进行中
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end -->
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="sh-page-footer">
+                <!-- submit button -->
+                <a href="#!" class="sh-submit-btn">submit</a>
+            </footer>
+        </section>
+    </body>
+</html>

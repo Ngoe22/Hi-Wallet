@@ -1,0 +1,248 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+/* .sh-phone-scr{
+    grid-template-rows: 10vh 1fr 10vh; 
+} */
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+/* .sh-page-header .sh-header-btn.right,
+.sh-page-header .sh-header-btn.left {
+    visibility: hidden;
+} */
+
+/* --- BODY --- */
+
+.sh-page-body {
+    padding: 10px 20px 5px;
+}
+
+/* --- FOOTER --- */
+
+/* .sh-page-footer {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-nav-bar {
+    display: none;
+} */
+
+.sh-page-footer .sh-submit-btn {
+    display: none;
+}
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+/* <!-- balance block --> */
+
+.balance-block {
+    padding: 15px 25px;
+    margin-top: 10px;
+    background: var(--color-trans-orange);
+    box-shadow: 0 7px 15px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.balance-block .coin-type {
+    font-size: 1.8rem;
+}
+
+.balance-block .total-balance {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.balance-block .frozen-balance {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* dot button */
+
+.moving-dot-btn {
+    margin-top: 15px;
+    gap: 7px;
+}
+
+.moving-dot-btn .dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--background-blur-gray);
+}
+.moving-dot-btn .dot.right {
+    background: var(--color-trans-orange);
+}
+
+/* <!-- reminder --> */
+.reminder {
+    padding: 5px 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    gap: 10px;
+    background-color: var(--background-blur-gray);
+    color: var(--text-gray);
+    font-size: 1.4rem;
+}
+
+/* <!-- transfer-function --> */
+
+.transfer-function {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.transfer-function .item {
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: white;
+}
+
+.transfer-function .item .icon {
+    object-fit: cover;
+    width: 30%;
+}
+
+.transfer-function .item .label {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+}
+
+.transfer-function .item:hover .icon {
+    width: 40%;
+    transition: 0.5s;
+}
+.transfer-function .item:hover .label {
+    color: var(--primary-color);
+    transition: 0.5s;
+    font-size: 1.6rem;
+}
+.transfer-function .item:hover  {
+    transition: 0.5s;
+    box-shadow: var(--block-shadow);
+}
+
+/* <!-- stat --> */
+
+.stat-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "box-1 box-3 "
+        "box-2 box-3";
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.stat-section .item {
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: transparent;
+}
+
+.stat-section .item .label {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.stat-section .item .value {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.8rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* each */
+.stat-section .item.th1 {
+    grid-area: box-1;
+    background: var(--color-trans-green);
+}
+.stat-section .item.th2 {
+    grid-area: box-2;
+    background: var(--color-trans-blue);
+}
+.stat-section .item.th3 {
+    grid-area: box-3;
+    background: var(--color-trans-pink);
+}
+
+.stat-section .item.th1 .icon,
+.stat-section .item.th2 .icon {
+    width: 40px;
+}
+
+.stat-section .item.th3 .icon {
+    display: block;
+    width: 70px;
+    margin-left: auto;
+}
+
+/* <!-- announce board  --> */
+
+/*  board head */
+.announce-board {
+    margin-top: 15px;
+    background-color: white;
+    box-shadow: 0 0 0 0;
+}
+
+.announce-board .board-head .label {
+    color: var(--text-green);
+    font-weight: 600;
+}
+
+.announce-board .board-head .view-more {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+}
+
+/* board body */
+
+.announce-board .board-body .item {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 10px;
+}
+.announce-board .board-body .item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.announce-board .board-body .time {
+    display: inline-block;
+    border-radius: 5px;
+    /* color: var(--text-gray); */
+}
+
+.announce-board .board-body .mark {
+    display: inline-block;
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: transparent;
+    opacity: 70%;
+    /* color: white; */
+}
+
+.announce-board .board-body .title {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* color: black; */
+}

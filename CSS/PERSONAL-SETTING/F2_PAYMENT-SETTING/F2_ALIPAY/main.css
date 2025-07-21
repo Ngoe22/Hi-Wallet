@@ -1,0 +1,71 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+/* .sh-phone-scr{
+    grid-template-rows: 9vh 1fr 11vh;
+} */
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+.sh-page-header .right {
+    visibility: hidden;
+}
+
+/* --- BODY --- */
+
+.sh-page-body {
+    padding: 0 20px;
+}
+
+/* --- FOOTER --- */
+
+/* .sh-page-footer {
+    display: none;
+} */
+
+.sh-page-footer .sh-nav-bar {
+    display: none;
+}
+
+/* .sh-page-footer .sh-submit-btn {
+    display: none;
+} */
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+.board {
+    margin-top: 40px;
+}
+
+.board .item {
+    background-color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.board .item.name-block .info,
+.board .item.account-block .info {
+    /* color: rgba(128, 128, 128, 0.99); */
+    color: transparent;
+    font-size: 1.3rem;
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+
+.board .upload-block .upload-qr {
+    margin-top: 15px;
+    font-size: 120px;
+}
+
+.board .upload-block .upload-qr .qr-preview {
+    display: block;
+    padding: 0 10px;
+    border: 5px solid rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+}

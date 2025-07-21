@@ -1,0 +1,132 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+.sh-phone-scr {
+    grid-template-rows: 09vh 1fr;
+}
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+.sh-page-header .right {
+    visibility: hidden;
+}
+
+/* --- BODY --- */
+
+.sh-page-body {
+    padding: 0 20px;
+}
+
+/* --- FOOTER --- */
+
+.sh-page-footer {
+    display: none;
+}
+
+/* .sh-page-footer .sh-nav-bar {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-submit-btn {
+    display: none;
+} */
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+/* <!-- self-info --> */
+.self-info {
+    margin-top: 30px;
+}
+
+.self-info .avatar-block {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: var(--background-blur-gray);
+    color: white;
+    font-size: 5rem;
+}
+
+.self-info .nick-name {
+    margin-top: 10px;
+}
+
+.self-info .id-line {
+    margin-top: 10px;
+    color: var(--text-gray);
+}
+
+.self-info .info-edit {
+    padding: 10px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* <!-- setting-board --> */
+
+.setting-board,
+.about {
+    margin-top: 25px;
+    box-shadow: 0 0;
+}
+
+.setting-board .func,
+.about {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: black;
+    background-color: white;
+    padding: 13px 15px;
+}
+
+.setting-board .func:first-child,
+.about {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.setting-board .func:last-child,
+.about {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.setting-board .func:not(last-child) {
+    margin-bottom: 1px;
+}
+
+.setting-board .func .icon,
+.about .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 1.8rem;
+    color: var(--text-green);
+}
+
+.setting-board .func .right-arrow,
+.about .right-arrow {
+    display: inline-block;
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    margin-left: auto;
+}
+
+.setting-board .func:hover .func-name,
+.about:hover .label {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.setting-board .func:hover .icon,
+.about:hover .icon {
+    color: var(--primary-color);
+    transition: 0.5s;
+}

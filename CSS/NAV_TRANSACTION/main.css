@@ -1,0 +1,102 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+.sh-phone-scr {
+    grid-template-rows: 1fr 11vh;
+}
+
+/* --- HEADER --- */
+
+.sh-page-header {
+    display: none;
+}
+
+/* .sh-page-header .left ,
+.sh-page-header .right {
+    visibility: hidden;
+} */
+
+/* --- BODY --- */
+
+/* .sh-page-body{
+    padding : 0 20px ;
+} */
+
+/* --- FOOTER --- */
+
+/* .sh-page-footer {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-nav-bar {
+    display: none;
+} */
+
+.sh-page-footer .sh-submit-btn {
+    display: none;
+}
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+.account-balance {
+    background: var(--color-trans-orange);
+    justify-content: end;
+    height: 150px;
+    color: white;
+}
+
+.account-balance .coin-type {
+    gap: 5px;
+    font-weight: 600;
+}
+
+.account-balance .balance {
+    margin-top: 15px;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.account-balance .frozen-balance {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* BODY
+ */
+.body {
+    padding: 0 20px;
+}
+
+.board {
+    margin-top: 20px;
+}
+
+.board .ord-card {
+    display: block;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.board .ord-card .top,
+.board .ord-card .bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    color: black;
+}
+.board .ord-card .bot {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: var(--text-gray);
+}
+
+.board .ord-card .top .ord-num::before {
+    content: "订单号 ： ";
+}
+
+.board .ord-card .bot .left-balance::before {
+    content: "余额 : ";
+}

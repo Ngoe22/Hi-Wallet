@@ -1,0 +1,119 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+/* .sh-phone-scr{
+    grid-template-rows: 9vh 1fr 11vh;
+} */
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+.sh-page-header .left,
+.sh-page-header .right {
+    visibility: hidden;
+}
+
+/* --- BODY --- */
+
+/* .sh-page-body{
+    padding : 0 20px ;
+} */
+
+/* --- FOOTER --- */
+
+/* .sh-page-footer {
+    display: none;
+} */
+
+.sh-page-footer .sh-nav-bar {
+    /*display: none;*/
+    position: relative;
+}
+
+.sh-page-footer .sh-nav-bar .cs-contact {
+    /*display: none;*/
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    background-color: white;
+    padding: 10px 10px;
+    border: 5px solid var(--color-green);
+    border-radius: 50%;
+
+    font-size: 3.5rem;
+    color: var(--color-green);
+}
+
+.sh-page-footer .sh-submit-btn {
+    display: none;
+}
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+/* <!-- search-bar --> */
+
+.search-bar {
+    background-color: var(--background-blur-gray);
+    width: calc(100% - 40px);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 20px auto 0;
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.cs-case-board .cs-case-tab {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: var(--text-gray);
+}
+.cs-case-board .cs-case-tab .item {
+    width: 33.33%;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+}
+.cs-case-board .cs-case-tab .item.active {
+    border-color: var(--text-green);
+    color: var(--text-green);
+    font-weight: 600;
+}
+
+/* <!-- list --> */
+
+.cs-case-list .card {
+    display: block;
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 1px;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+}
+
+.cs-case-list .card .line1 .case-type {
+    display: inline-block;
+    padding: 3px 5px 2px;
+    border-radius: 7px;
+    background: var(--color-trans-green);
+    color: white;
+    color: transparent;
+}
+
+.cs-case-list .card .title {
+    margin-top: 10px;
+    /* color: rgba(0, 0, 0, 0.7); */
+}
+
+.cs-case-list .card .line3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.cs-case-list .card .line3 .case-id::before {
+    content: "案件编号：";
+}

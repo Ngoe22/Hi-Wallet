@@ -1,0 +1,99 @@
+/* ================================ PAGE LAYOUT ================================ */
+
+.sh-phone-scr {
+    grid-template-rows: 9vh auto 1fr;
+}
+
+/* --- HEADER --- */
+
+/* .sh-page-header {
+    display: none;
+} */
+
+/* .sh-page-header .left ,
+.sh-page-header .right {
+    visibility: hidden;
+} */
+
+/* 
+.sh-coin-and-trade-type {
+    padding: 0 20px 5px;
+}
+*/
+
+/* --- BODY --- */
+
+.sh-page-body {
+    padding: 0 20px;
+}
+
+/* --- FOOTER --- */
+
+.sh-page-footer {
+    display: none;
+}
+
+/* .sh-page-footer .sh-nav-bar {
+    display: none;
+} */
+
+/* .sh-page-footer .sh-submit-btn {
+    display: none;
+} */
+
+/* ================================ PAGE-COMMON ================================ */
+
+/* ================================ CSS ================================ */
+
+.ord-board {
+    margin-top: 20px;
+}
+
+.ord-board .ord-card {
+    background-color: white;
+    font-size: 1.4rem;
+    padding: 10px 10px 0;
+    border-radius: 10px;
+    color: var(--text-gray);
+}
+
+.ord-board .ord-card .line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ord-board .ord-card .th1,
+.ord-board .ord-card .th2 {
+    margin-bottom: 10px;
+}
+
+.ord-board .ord-card .line.action .status {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.ord-board .ord-card .status .label {
+    color: var(--primary-color);
+}
+
+/* child order */
+
+.child-ord-board {
+    display: none;
+    position: absolute;
+    width: 510px;
+    right: -10px;
+    top: calc(100%);
+    border-top: 10px solid transparent;
+}
+.ord-board .ord-card .status:hover .child-ord-board {
+    display: block;
+}
+
+.child-ord-board .child-ord-card {
+    display: block;
+    color: var(--text-gray);
+    background-color: white;
+    padding: 10px;
+}
