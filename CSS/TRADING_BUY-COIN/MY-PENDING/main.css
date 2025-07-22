@@ -67,10 +67,22 @@
     margin-bottom: 10px;
 }
 
+.ord-board .ord-card .line.action {
+    position: relative;
+}
+
+.ord-board .ord-card .line.action .time {
+    position: absolute;
+    left: 0px;
+}
+
 .ord-board .ord-card .line.action .status {
     cursor: pointer;
     position: relative;
     padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .ord-board .ord-card .status .label {
@@ -82,7 +94,7 @@
 .child-ord-board {
     display: none;
     position: absolute;
-    width: 510px;
+    width: calc(100% + 20px);
     right: -10px;
     top: calc(100%);
     border-top: 10px solid transparent;
