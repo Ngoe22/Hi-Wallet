@@ -320,6 +320,7 @@ common padding : 15px 15px
 /* coin type line */
 .sh-coin-type-line {
     margin-top: 20px;
+    color: black;
 }
 .sh-coin-type-line .coin-type {
     border: 0;
